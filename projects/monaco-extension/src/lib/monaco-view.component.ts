@@ -31,8 +31,6 @@ import {
 } from '@angular/core';
 import {MinimalNodeEntryEntity} from 'alfresco-js-api';
 import {AlfrescoApiService} from '@alfresco/adf-core';
-import {Converter} from 'showdown';
-import {CodeModel} from "@ngstack/code-editor";
 
 @Component({
     selector: 'aca-monaco-view',

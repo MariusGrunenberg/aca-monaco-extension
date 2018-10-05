@@ -1,8 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CoreModule} from '@alfresco/adf-core';
-import {ContentModule} from '@alfresco/adf-content-services';
 import {ExtensionService} from '@alfresco/adf-extensions';
-import {MonacoViewComponent} from './viewer/monaco-view/monaco-view.component';
+import {MonacoViewComponent} from './monaco-view.component';
 import { MonacoEditorModule } from 'ngx-monaco-editor';
 
 export function components() {
@@ -14,17 +13,16 @@ export function components() {
 @NgModule({
     imports: [
         CoreModule.forChild(),
-        ContentModule.forChild(),
         MonacoEditorModule.forRoot()
     ],
     declarations: components(),
     exports: components(),
     entryComponents: components()
 })
-export class AcaDevToolsModule {
+export class MonacModule {
     constructor(extensions: ExtensionService) {
         extensions.setComponents({
-            'dev.monaco.component': MonacoViewComponent,
+            'monaco-extension.main.component': MonacoViewComponent,
         });
     }
 }
