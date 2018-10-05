@@ -5,7 +5,7 @@
 
 This project contains:
 
-- ACA extension to use Monaco edito
+- ACA extension to use Monaco editor
 
 ## Building
 
