@@ -1,0 +1,24 @@
+{
+  "name": "monaco-extension",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "@alfresco/adf-extensions": "^2.6.0-ef568679d5dd3f1af9b26addc1a3a4ec133f7561",
+    "@alfresco/adf-core": "^2.5.0",
+    "ngx-monaco-editor": "6.0.0"
+  },
+  "main": "bundles/monaco-extension.umd.js",
+  "module": "fesm5/monaco-extension.js",
+  "es2015": "fesm2015/monaco-extension.js",
+  "esm5": "esm5/monaco-extension.js",
+  "esm2015": "esm2015/monaco-extension.js",
+  "fesm5": "fesm5/monaco-extension.js",
+  "fesm2015": "fesm2015/monaco-extension.js",
+  "typings": "monaco-extension.d.ts",
+  "metadata": "monaco-extension.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
