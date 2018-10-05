@@ -1,0 +1,24 @@
+{
+  "name": "aca-monaco-extension",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "ngx-monaco-editor": "^6.0.0"
+  },
+    "contributors": [{
+    "name": "Eugenio Romano"
+  },
+  {
+    "name": "Marius Grunenberg"
+  },
+  {
+    "name": "Max Finsterbusch"
+  }],
+  "peerDependencies": {
+    "@alfresco/adf-content-services": "2.6.0",
+    "@alfresco/adf-core": "2.6.0",
+    "@alfresco/adf-extensions": "2.6.0",
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0"
+  }
+}
