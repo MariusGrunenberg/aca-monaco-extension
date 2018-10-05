@@ -1,0 +1,21 @@
+{
+  "name": "@denysvuika/aca-dev-tools",
+  "author": {
+    "name": "Denys Vuika",
+    "email": "denys.vuika@gmail.com",
+    "url": "https://github.com/DenysVuika"
+  },
+  "version": "0.1.2",
+  "license": "MIT",
+  "dependencies": {
+    "showdown": "^1.8.6"
+  },
+  "peerDependencies": {
+    "@alfresco/adf-content-services": "^2.5.0",
+    "@alfresco/adf-core": "^2.5.0",
+    "@alfresco/adf-extensions": "^2.6.0-018b08cce71a46bebdadb9d1ba3c17617de68005",
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "@ngstack/code-editor": "^0.4.3"
+  }
+}
