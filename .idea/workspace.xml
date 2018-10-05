@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="494870ab-07f8-4f22-b715-481a0c8c171d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/assets/monaco-extension.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/ng-package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/src/public_api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/tsconfig.lib.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/monaco-extension/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dev.tools.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/monaco-view.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/monaco-extension/src/lib/monaco-view.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/viewer/monaco-view/monaco-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/monaco-extension/src/lib/monaco-view.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/viewer/monaco-view/monaco-view.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/monaco-extension/src/lib/monaco-view.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/viewer/monaco-view/monaco-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/monaco-extension/src/lib/monaco-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public_api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/monaco-extension/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +20,7 @@
       <file leaf-file-name="monaco-extension.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/monaco-extension/assets/monaco-extension.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="-7">
               <caret line="2" column="7" selection-start-line="2" selection-end-line="3" />
             </state>
           </provider>
@@ -43,7 +29,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="-7">
               <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
             </state>
           </provider>
@@ -52,8 +38,8 @@
       <file leaf-file-name="monaco-extension.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/monaco-extension/assets/monaco-extension.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-end-line="17" />
+            <state relative-caret-position="-7">
+              <caret line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -61,7 +47,7 @@
       <file leaf-file-name="public_api.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/monaco-extension/src/public_api.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="-7">
               <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
@@ -70,8 +56,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/monaco-extension/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -79,7 +65,7 @@
       <file leaf-file-name="monaco-view.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/monaco-extension/src/lib/monaco-view.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="-7">
               <caret line="21" column="24" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -171,50 +157,6 @@
             <path>
               <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
               <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="monaco-extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="monaco-extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aca-monaco-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aca-monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="monaco-extension" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,12 +257,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538750363283</updated>
-      <workItem from="1538750365876" duration="3384000" />
+      <workItem from="1538750365876" duration="3849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3384000" />
+    <option name="totallyTimeSpent" value="3849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -464,28 +406,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/monaco-extension/assets/monaco-extension.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="-7">
           <caret line="2" column="7" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/monaco-extension/assets/monaco-extension.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-end-line="17" />
+        <state relative-caret-position="-7">
+          <caret line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/monaco-extension/src/public_api.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="-7">
           <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/monaco-extension/src/lib/monaco-view.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="-7">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -495,15 +437,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="-7">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/monaco-extension/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
