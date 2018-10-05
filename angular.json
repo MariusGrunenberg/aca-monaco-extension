@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aca-dev-tools-workspace": {
+    "aca-monaco-extension-workspace": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/aca-dev-tools-workspace",
+            "outputPath": "dist/aca-monaco-extension-workspace",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "aca-dev-tools-workspace:build"
+            "browserTarget": "aca-monaco-extension-workspace:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "aca-dev-tools-workspace:build:production"
+              "browserTarget": "aca-monaco-extension-workspace:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aca-dev-tools-workspace:build"
+            "browserTarget": "aca-monaco-extension-workspace:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "aca-dev-tools-workspace-e2e": {
+    "aca-monaco-extension-workspace-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "aca-dev-tools-workspace:serve"
+            "devServerTarget": "aca-monaco-extension-workspace:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "aca-dev-tools-workspace:serve:production"
+              "devServerTarget": "aca-monaco-extension-workspace:serve:production"
             }
           }
         },
@@ -122,33 +122,38 @@
         }
       }
     },
-    "aca-dev-tools": {
-      "root": "projects/aca-dev-tools",
-      "sourceRoot": "projects/aca-dev-tools/src",
+    "aca-monaco-extension": {
+      "root": "projects/aca-monaco-extension",
+      "sourceRoot": "projects/aca-monaco-extension/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/aca-dev-tools/tsconfig.lib.json",
-            "project": "projects/aca-dev-tools/ng-package.json"
+            "tsConfig": "projects/aca-monaco-extension/tsconfig.lib.json",
+            "project": "projects/aca-monaco-extension/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/aca-monaco-extension/ng-package.prod.json"
+            }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/aca-dev-tools/src/test.ts",
-            "tsConfig": "projects/aca-dev-tools/tsconfig.spec.json",
-            "karmaConfig": "projects/aca-dev-tools/karma.conf.js"
+            "main": "projects/aca-monaco-extension/src/test.ts",
+            "tsConfig": "projects/aca-monaco-extension/tsconfig.spec.json",
+            "karmaConfig": "projects/aca-monaco-extension/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/aca-dev-tools/tsconfig.lib.json",
-              "projects/aca-dev-tools/tsconfig.spec.json"
+              "projects/aca-monaco-extension/tsconfig.lib.json",
+              "projects/aca-monaco-extension/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -158,5 +163,5 @@
       }
     }
   },
-  "defaultProject": "aca-dev-tools-workspace"
+  "defaultProject": "aca-monaco-extension-workspace"
 }

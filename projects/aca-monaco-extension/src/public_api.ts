@@ -1,5 +1,5 @@
 /*
- * Public API Surface of aca-dev-tools
+ * Public API Surface of aca-monaco-extension
  */
 
-export * from './lib/monaco-view.module';
+export * from './lib/aca-monaco-extension.module';

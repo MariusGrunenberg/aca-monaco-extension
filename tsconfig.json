@@ -5,7 +5,6 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -18,11 +17,11 @@
       "dom"
     ],
     "paths": {
-      "@denysvuika/aca-dev-tools": [
-        "dist/aca-dev-tools"
+      "aca-monaco-extension": [
+        "dist/aca-monaco-extension"
       ],
-      "@denysvuika/aca-dev-tools/*": [
-        "dist/aca-dev-tools/*"
+      "aca-monaco-extension/*": [
+        "dist/aca-monaco-extension/*"
       ]
     }
   }
