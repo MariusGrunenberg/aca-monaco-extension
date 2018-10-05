@@ -29,48 +29,53 @@ import {
     OnInit,
     ViewEncapsulation
 } from '@angular/core';
-import { MinimalNodeEntryEntity } from 'alfresco-js-api';
-import { AlfrescoApiService } from '@alfresco/adf-core';
-// import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { Converter } from 'showdown';
+import {MinimalNodeEntryEntity} from 'alfresco-js-api';
+import {AlfrescoApiService} from '@alfresco/adf-core';
+import {Converter} from 'showdown';
+import {CodeModel} from "@ngstack/code-editor";
 
 @Component({
-    selector: 'aca-markdown-view',
-    template: `<div class="content" [innerHTML]="content"></div>`,
-    styleUrls: ['./markdown-view.component.scss'],
+    selector: 'aca-monaco-view',
+    templateUrl: './monaco-view.component.html',
+    styleUrls: ['./monaco-view.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    host: { 'class': 'aca-markdown-view' }
+    host: {'class': 'aca-monaco-view'}
 })
-export class MarkdownViewComponent implements OnInit {
+export class MonacoViewComponent implements OnInit {
+
     @Input()
     url: string;
 
     @Input()
     node: MinimalNodeEntryEntity;
+    editor: any;
+    code: any;
+    editorOptions = {
+        theme: 'vs-dark',
+        language: 'json',
+        autoIndent: true,
+        formatOnPaste: true,
+        formatOnType: true
+    };
 
-    // content: SafeHtml = null;
-    content: string = null;
+    onInit(editor) {
+        this.editor = editor;
+        this.indentCode();
+    }
 
-    constructor(
-        private apiService: AlfrescoApiService
-        // private sanitizer: DomSanitizer
-        ) {}
+    constructor(private apiService: AlfrescoApiService) {
+    }
+
+    indentCode() {
+        setTimeout(() => {
+            this.editor.getAction('editor.action.formatDocument').run();
+        }, 300);
+    }
 
     ngOnInit() {
         this.apiService.nodesApi.getFileContent(this.node.id).then(
-            result => {
-                const converter = new Converter({
-                    tables: true,
-                    ghCodeBlocks: true,
-                    ghCompatibleHeaderId: true,
-                    simplifiedAutoLink: true
-                });
-                converter.setOption('metadata', true);
-                converter.setFlavor('github');
-
-                const html = converter.makeHtml(result);
-                // this.content = this.sanitizer.bypassSecurityTrustHtml(html);
-                this.content = html;
+            (fileContent) => {
+                this.code  = fileContent;
             },
             err => console.log(err)
         );
