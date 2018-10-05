@@ -22,8 +22,17 @@ npm publish --access=public
 
 ## Testing with local ACA instance
 
-1. Install the monaco-extension in your ACA instance
+Open your ACA instance
+
+1 . Install monaco-extension 
+```sh
+npm install --save-dev monaco-extension
+```
+
 2. Install monaco-extension in your ACA instance
+```sh
+npm install --save-dev ngx-monaco-editor
+```
 
 Switch to the ACA project and run:
 
