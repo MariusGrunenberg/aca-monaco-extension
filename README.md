@@ -1,6 +1,5 @@
 # aca-monaco-extension
 
-
 # ACA Extension Example
 
 This project contains:
@@ -39,12 +38,12 @@ Switch to the ACA project and run:
 Update the `extensions.module.ts` file and append the module:
 
 ```ts
-import { MonacModule } from 'monaco-extension';
+import { AcaMonacoModule } from 'monaco-extension';
 
 @NgModule({
   imports: [
     ...,
-    MonacModule
+    AcaMonacoModule
   ]
 })
 export class AppExtensionsModule {}
@@ -57,9 +56,7 @@ Update the `app.extensions.json` file and register new plugin:
   "$schema": "../../extension.schema.json",
   "$name": "app",
   "$version": "1.0.0",
-  "$references": [
-    "monaco-extension.json"
-  ],
+  "$references": ["monaco-extension.json"]
 }
 ```
 

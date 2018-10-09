@@ -74,7 +74,7 @@ MonacoViewComponent.decorators = [
                 template: "<ngx-monaco-editor id=\"adf-monaco-file-editor\"\n                   class=\"adf-file-editor\"\n                   [options]=\"editorOptions\"\n                   [(ngModel)]=\"code\"\n                   (onInit)=\"onInit($event)\">\n</ngx-monaco-editor>",
                 encapsulation: ViewEncapsulation.None,
                 host: { 'class': 'aca-monaco-view' },
-                styles: [""]
+                styles: [".adf-file-editor{height:100%}"]
             }] }
 ];
 MonacoViewComponent.ctorParameters = () => [
