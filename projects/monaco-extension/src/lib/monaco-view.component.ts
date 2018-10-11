@@ -23,59 +23,51 @@
  * along with Alfresco. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import {
-    Component,
-    Input,
-    OnInit,
-    ViewEncapsulation
-} from '@angular/core';
-import {MinimalNodeEntryEntity} from 'alfresco-js-api';
-import {AlfrescoApiService} from '@alfresco/adf-core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { MinimalNodeEntryEntity } from 'alfresco-js-api';
+import { AlfrescoApiService } from '@alfresco/adf-core';
 
 @Component({
-    selector: 'aca-monaco-view',
-    templateUrl: './monaco-view.component.html',
-    styleUrls: ['./monaco-view.component.scss'],
-    encapsulation: ViewEncapsulation.None,
-    host: {'class': 'aca-monaco-view'}
+  selector: 'aca-monaco-view',
+  templateUrl: './monaco-view.component.html',
+  styleUrls: ['./monaco-view.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class MonacoViewComponent implements OnInit {
+  @Input()
+  url: string;
 
-    @Input()
-    url: string;
+  @Input()
+  node: MinimalNodeEntryEntity;
+  editor: any;
+  code: any;
+  editorOptions = {
+    theme: 'vs-dark',
+    language: 'json',
+    autoIndent: true,
+    formatOnPaste: true,
+    formatOnType: true
+  };
 
-    @Input()
-    node: MinimalNodeEntryEntity;
-    editor: any;
-    code: any;
-    editorOptions = {
-        theme: 'vs-dark',
-        language: 'json',
-        autoIndent: true,
-        formatOnPaste: true,
-        formatOnType: true
-    };
+  onInit(editor) {
+    this.editor = editor;
+    this.indentCode();
+  }
 
-    onInit(editor) {
-        this.editor = editor;
-        this.indentCode();
-    }
+  constructor(private apiService: AlfrescoApiService) {}
 
-    constructor(private apiService: AlfrescoApiService) {
-    }
+  indentCode() {
+    setTimeout(() => {
+      this.editor.getAction('editor.action.formatDocument').run();
+    }, 300);
+  }
 
-    indentCode() {
-        setTimeout(() => {
-            this.editor.getAction('editor.action.formatDocument').run();
-        }, 300);
-    }
-
-    ngOnInit() {
-        this.apiService.nodesApi.getFileContent(this.node.id).then(
-            (fileContent) => {
-                this.code  = fileContent;
-            },
-            err => console.log(err)
-        );
-    }
+  ngOnInit() {
+    this.apiService.nodesApi.getFileContent(this.node.id).then(
+      fileContent => {
+        this.code = fileContent;
+      },
+      err => console.log(err)
+    );
+  }
 }
