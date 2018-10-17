@@ -8,7 +8,7 @@ This project contains:
 
 ## DISCLAIMER
 
-Currently this package only involves the editor itself, and some functionality is still missing. This includes:
+Currently this package only involves the editor itself, some functionality still needs to be implemented. This includes:
 
 * Saving Files
 * Allowing Customization
