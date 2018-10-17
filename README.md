@@ -6,6 +6,14 @@ This project contains:
 
 - ACA extension to use Monaco editor
 
+## DISCLAIMER
+
+Currently this package only involves the editor itself, and some functionality is still missing. This includes:
+
+* Saving Files
+* Allowing Customization
+* Support for other filetypes
+
 ## Building
 
 ```sh
